@@ -1,5 +1,53 @@
-@media only screen and (max-width: 740px){
-    .navbar li{
+@media (max-width:1024px) {
+    .s-full-width{
+        width: 100% !important;
+    }
+    .s-col-full{
+        width: 100%;
+    }
+    .s-mt-8{
+        margin-top: 8px !important;
+    }
+    .navbar{
         display: block;
+    }
+    .navbar li{
+        display: block ;
+    }
+    #header .navbar li:first-child {
+        display: inline-block;
+    }
+    #header{
+        overflow: hidden;
+    }
+    .search-btn{
+        display: none;
+    }
+    #header .mobile-menu-btn{
+    float: right;
+    display: block;
+    padding: 12px 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    }
+    #header .mobile-menu-btn:hover{
+        color: #000;
+        background-color: #ccc;
+    }
+    .menu-icon{
+        color: #fff;
+        line-height: 46.5px;
+        font-size: 20px;
+    }
+    .content .member-item{
+        margin-top: 30px;
+        width: 100%;
+    }
+    .content .content-img{
+        width: 60%;
+    }
+    .contact-form{
+        margin-top: 16px;
     }
 }

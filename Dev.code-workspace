@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../Dev"
+		},
+		{
+			"path": "../CSS-MySite"
+		},
+		{
+			"path": "../Javascript-lesson1"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Dev"
+	}
+}

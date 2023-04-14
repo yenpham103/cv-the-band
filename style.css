@@ -45,16 +45,14 @@ html{
 .margin-top{
     margin-top: 8px !important;
 }
+.mt-32{
+    margin-top: 32px;
+}
 .mt-16{
     margin-top: 16px;
 }
-/*
-.main{
-    overflow: hidden;
-}
-*/
 /* Begin css header */
-.header{
+#header{
 height: 46.5px;
 background-color: #000;
 position: fixed;
@@ -109,18 +107,21 @@ z-index: 1;
 .navbar .nav-arrow-down{
     font-size: 14px;
 }
-.header .search-icon{
+#header .search-icon{
     color: #fff;
     font-size: 20px;
-    line-height: 46.5px;
-    padding: 0 21px;    
+    line-height: 46.5px;    
 
 }
-.header .search-btn{
+#header .mobile-menu-btn{
+    display: none;
+}
+#header .search-btn{
     float: right;
+    padding: 0 21px;  
     cursor: pointer;  
 }
-.header .search-btn:hover{
+#header .search-btn:hover{
     background-color: #f44336;
 }
 /* css slider */
@@ -140,7 +141,7 @@ z-index: 1;
     right: 0;
     text-align: center;
 }
-/* Thêm 2 thuộc tính position ở slider và text content , để nó trả lại vị trí cho ảnh(padding 50% được đúng */
+
 .slider .text-heading{
     font-weight: 500%;
     font-size: 24px;
@@ -164,7 +165,7 @@ z-index: 1;
     font-size: 30px;
     font-family: Arial,  sans-serif;
     font-weight: 500;
-    letter-spacing: 4px;   /*  K,cach giua cac chu */
+    letter-spacing: 4px;  
     margin-bottom: 10px;
     
 
@@ -174,15 +175,15 @@ z-index: 1;
     font-size: 15px;
     font-family: Lato;
     margin-top: 15px;
-    font-style: italic; /*phong cach cua chu */
-    opacity: 0.8;   /* Do trong suot 0-->1 */
+    font-style: italic;
+    opacity: 0.8;  
    
 }
 .content .about-text{
     margin-top: 25px;
     font-size: 15px;
-    text-align: justify; /* justify : can deu 2 ben */
-    line-height: 1.4; /* k.cach giua 2 dong chu  */
+    text-align: justify; 
+    line-height: 1.4;
 
 }
 .content .member-list{
@@ -196,7 +197,7 @@ z-index: 1;
 .content .member-img{
     width: 154px;
     margin-top: 15px;
-    border-radius: 4px; /* bo goc */
+    border-radius: 4px;
 }
 /* css tour */
 .tour-section{
@@ -205,12 +206,12 @@ z-index: 1;
 .tickets-list{
     background-color: #fff;
     margin-top: 40px;
-    list-style: none;  /* Xoa dau cham đề mục */
+    list-style: none; 
 }
 .tickets-list li{
     font-size: 15px;
     padding: 4px 16px;
-    border-bottom: 1px solid #ddd;  /* tao duong gach ngang */
+    border-bottom: 1px solid #ddd;  
     color: #757575;
 }
 .tickets-list .sold-out{
@@ -233,7 +234,7 @@ z-index: 1;
 
 }
 .places-list{
-    margin-top: 32px;   
+    margin-top: 16px;   
 }
 
 .place-img{
@@ -241,14 +242,13 @@ z-index: 1;
     display: block;
 }
 .place-img:hover{
-    opacity: 0.6;   /* an vao anh co hinh mo` */
+    opacity: 0.6;   
 }
 .place-body{
     background-color: #fff;
     padding: 16px;
     font-size: 15px;
 }
-/* thể h k ăn theo thể cha , nên cần css riêng cho thể h */
 .place-heading{
     font-size: 15px;
     font-weight: 600;
@@ -269,6 +269,7 @@ z-index: 1;
     padding: 11px 16px; 
     display: inline-block;
     margin-top: 15px;
+    text-align: center;
 }
 .place-buy-btn:hover{
     color: #000;
@@ -418,3 +419,4 @@ z-index: 1;
     color: rgba(0, 0, 0, 0.4);
 
 }
+
